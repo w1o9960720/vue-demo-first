@@ -152,7 +152,7 @@ export default {
       console.log(1);
       this.ishow = !this.ishow;
     },
-    de() {},
+
   },
 };
 </script>
