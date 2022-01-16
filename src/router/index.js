@@ -4,10 +4,20 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    comments: 'home'
+  }
+]
 
-  ]
 
-  const router = new VueRouter({
-    routes 
-  })
-  export default router
+
+
+
+const router = new VueRouter({
+  routes,
+  mode: 'history'
+})
+
+
+export default router
