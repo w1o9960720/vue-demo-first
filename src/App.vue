@@ -13,7 +13,7 @@
     <span v-show="ishow">我我哦我</span>
     <input type="text" v-model="int" />
     <button @click="dianji">点击</button>
-
+    <Iput1 />
     <!-- <shuaixuan/> -->
   </div>
 </template>
@@ -28,9 +28,11 @@
 // import Load from './components/load/load.vue';
 // import scroll from './components/scroll/scroll.vue';
 // import shuaixuan from "./components/shuaixuan/shuaixuan.vue";
+import Iput1 from "./components/Input/Input.vue";
 export default {
   name: "App",
   components: {
+    Iput1,
     // Load,
     //  categroy,
     // demo,
@@ -152,7 +154,6 @@ export default {
       console.log(1);
       this.ishow = !this.ishow;
     },
-
   },
 };
 </script>
@@ -165,5 +166,4 @@ li {
   list-style: none;
   cursor: pointer;
 }
-
 </style>
