@@ -1,47 +1,24 @@
 <template>
   <div id="app">
-    <!-- <categroy></categroy> -->
-    <!-- <demo></demo> -->
-    <!-- <headerl></headerl> -->
-    <!-- <waterfull /> -->
-    <!-- <slidebar :arrlist1="arrlist" :heightlist="heightlist" />
-    <list ref="list1" v-for="item in arr7" :key="item.id"></list> -->
-    <!-- <div v-for="(key, index) in obj" :key="index">{{ key }}</div>
-    <div @click="de">登录</div> -->
-    <!-- <load/>
-    <scroll/> -->
-    <span v-show="ishow">我我哦我</span>
+       <Ioading></Ioading>
+  <span v-show="ishow">我我哦我</span>
     <input type="text" v-model="int" />
     <button @click="dianji">点击</button>
     <Iput1 />
-    <!-- <shuaixuan/> -->
+
+  
+   
   </div>
 </template>
 
 <script>
-// import categroy from "./components/categroy/categroy.vue";
-// import demo from'./components/demo/demo.vue'
-// import waterfull from "./components/waterfull/waterfull.vue";
-// import headerl from "./components/heeader/header.vue";
-// import slidebar from "./components/slidebar/slidebar.vue";
-// import list from "./components/list/list.vue";
-// import Load from './components/load/load.vue';
-// import scroll from './components/scroll/scroll.vue';
-// import shuaixuan from "./components/shuaixuan/shuaixuan.vue";
+import Ioading from "./components/loading/loading.vue";
 import Iput1 from "./components/Input/Input.vue";
 export default {
   name: "App",
   components: {
     Iput1,
-    // Load,
-    //  categroy,
-    // demo,
-    // waterfull,
-    // scroll,
-    // headerl,
-    // slidebar,
-    // list,
-    // shuaixuan
+    Ioading
   },
   data() {
     return {
