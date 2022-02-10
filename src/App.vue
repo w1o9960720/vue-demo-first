@@ -7,7 +7,6 @@
     <Iput1 />
 
   <Table></Table>
-  
    
   </div>
 </template>
