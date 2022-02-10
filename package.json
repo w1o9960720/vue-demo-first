@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.2",
+    "postcss-pxtorem": "^5.1.1",
     "sass": "^1.42.1",
     "vue": "^2.6.11",
     "vue-router": "^3.5.3",
