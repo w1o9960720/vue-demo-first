@@ -6,19 +6,21 @@
     <button @click="dianji">点击</button>
     <Iput1 />
 
-  
+  <Table></Table>
    
   </div>
 </template>
 
 <script>
 import Ioading from "./components/loading/loading.vue";
+import Table from './components/table/tabel.vue'
 import Iput1 from "./components/Input/Input.vue";
 export default {
   name: "App",
   components: {
     Iput1,
-    Ioading
+    Ioading,
+    Table
   },
   data() {
     return {
@@ -74,6 +76,7 @@ export default {
           id: 3,
           pareid: 0,
         },
+        
         {
           id: 31,
           pareid: 3,
@@ -85,14 +88,17 @@ export default {
         a: "1",
         b: "2",
       },
+      ht:null
     };
   },
   mounted() {
-    this.a = this.tree1();
-    console.log(this.a);
-    let arr = [];
-    arr = this.$refs.list1;
-    console.log(arr);
+    this. ht=document.getElementsByTagName('html')[0]
+    window.addEventListener('resize',this.resize)
+    // this.a = this.tree1();
+    // console.log(this.a);
+    // let arr = [];
+    // arr = this.$refs.list1;
+    // // console.log(arr);
     // let num = 0;
     // let arr3 = [];
 
@@ -131,6 +137,9 @@ export default {
       console.log(1);
       this.ishow = !this.ishow;
     },
+    resize(){
+      console.log(this.ht.getBoundingClientRect().width);
+    }
   },
 };
 </script>
