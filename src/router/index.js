@@ -13,7 +13,9 @@ const routes = [
 export const fn = () => {
   console.log();
 };
-
+export const fnb = () => {
+  console.log();
+};
 const router = new VueRouter({
   routes,
   mode: "history",
