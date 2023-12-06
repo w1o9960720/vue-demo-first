@@ -8,10 +8,6 @@ const routes = [
     path: '/',
     comments: 'home'
   },
-  {
-    path: '/',
-    comments: 'home1'
-  }
 ]
 
 
