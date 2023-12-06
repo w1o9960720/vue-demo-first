@@ -8,6 +8,14 @@ const routes = [
     path: '/',
     comments: 'home'
   },
+  {
+    path: '/',
+    comments: 'home44'
+  },
+  {
+    path: '/',
+    comments: 'home4'
+  },
 ]
 
 
