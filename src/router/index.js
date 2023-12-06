@@ -11,6 +11,10 @@ const routes = [
   {
     path: '/',
     comments: 'home1'
+  },
+  {
+    path: '/',
+    comments: 'home2'
   }
 ]
 
