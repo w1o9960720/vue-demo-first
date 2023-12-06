@@ -1,26 +1,25 @@
 <template>
   <div id="app">
-       <Ioading></Ioading>
-  <span v-show="ishow">我我哦我</span>
+    <Ioading></Ioading>
+    <span v-show="ishow">我我哦我</span>
     <input type="text" v-model="int" />
     <button @click="dianji">点击</button>
     <Iput1 />
-
-  <Table></Table>
-   
+    <div></div>
+    <Table></Table>
   </div>
 </template>
 
 <script>
 import Ioading from "./components/loading/loading.vue";
-import Table from './components/table/tabel.vue'
+import Table from "./components/table/tabel.vue";
 import Iput1 from "./components/Input/Input.vue";
 export default {
   name: "App",
   components: {
     Iput1,
     Ioading,
-    Table
+    Table,
   },
   data() {
     return {
@@ -76,7 +75,7 @@ export default {
           id: 3,
           pareid: 0,
         },
-        
+
         {
           id: 31,
           pareid: 3,
@@ -88,12 +87,12 @@ export default {
         a: "1",
         b: "2",
       },
-      ht:null
+      ht: null,
     };
   },
   mounted() {
-    this. ht=document.getElementsByTagName('html')[0]
-    window.addEventListener('resize',this.resize)
+    this.ht = document.getElementsByTagName("html")[0];
+    window.addEventListener("resize", this.resize);
     // this.a = this.tree1();
     // console.log(this.a);
     // let arr = [];
@@ -137,9 +136,9 @@ export default {
       console.log(1);
       this.ishow = !this.ishow;
     },
-    resize(){
+    resize() {
       console.log(this.ht.getBoundingClientRect().width);
-    }
+    },
   },
 };
 </script>
