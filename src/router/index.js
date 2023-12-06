@@ -8,6 +8,10 @@ const routes = [
     path: "/",
     comments: "home",
   },
+  {
+    path: "/",
+    comments: "home3",
+  },
 ];
 
 export const fn = () => {
