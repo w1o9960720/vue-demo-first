@@ -1,23 +1,22 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    comments: 'home'
+    path: "/",
+    comments: "home",
   },
-]
+];
 
-
-
-
+export const fn = () => {
+  console.log();
+};
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
-})
+  mode: "history",
+});
 
-
-export default router
+export default router;
