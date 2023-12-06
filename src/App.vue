@@ -6,6 +6,10 @@
     <button @click="dianji">点击</button>
     <Iput1 />
     <div></div>
+    <Iput1 />
+    <div></div>
+    <Iput1 />
+    <div></div>
     <Table></Table>
   </div>
 </template>
